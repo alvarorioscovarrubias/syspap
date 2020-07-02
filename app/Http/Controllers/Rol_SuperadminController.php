@@ -47,4 +47,12 @@ class Rol_SuperadminController extends Controller
         return view('private.Administrador.ecotomografia.index');
     }
 
+    public function tecnico(){
+        return view('private.Administrador.tecnico.index');
+    }
+
+    public function matron(){
+        return view('private.Administrador.matron.index');
+    }
+
 }

@@ -50,43 +50,57 @@
 	       			@endforeach--}}
 
 	       			<li class="nav-parent nav-expanded">
-	       				<a class="nav-link" href="{{Auth::user()->rol->name}}/pacientes">
+	       				<a class="nav-link" href="/{{Auth::user()->rol->name}}/pacientes">
                             <i class="nav-link" aria-hidden="true"></i>
                             <span>Pacientes</span>
                         </a>                        
                     </li>
+                    @if(Auth::user()->rol->name == 'Administrador')
+                    	<li class="nav-parent nav-expanded">
+		       				<a class="nav-link" href="/{{Auth::user()->rol->name}}/tecnicos">
+	                            <i class="nav-link" aria-hidden="true"></i>
+	                            <span>Técnicos</span>
+	                        </a>                        
+	                    </li>
+	                    <li class="nav-parent nav-expanded">
+		       				<a class="nav-link" href="/{{Auth::user()->rol->name}}/matrones">
+	                            <i class="nav-link" aria-hidden="true"></i>
+	                            <span>Matrones</span>
+	                        </a>                        
+	                    </li>
+                    @endif
                     <li class="nav-parent nav-expanded">
-	       				<a class="nav-link" href="{{Auth::user()->rol->name}}/PAP3">
+	       				<a class="nav-link" href="/{{Auth::user()->rol->name}}/PAP3">
                             <i class="nav-link" aria-hidden="true"></i>
                             <span>PAP 3 Años</span>
                         </a>                        
                     </li>
                     <li class="nav-parent nav-expanded">
-	       				<a class="nav-link" href="{{Auth::user()->rol->name}}/PAP1">
+	       				<a class="nav-link" href="/{{Auth::user()->rol->name}}/PAP1">
                             <i class="nav-link" aria-hidden="true"></i>
                             <span>PAP 1 Año</span>
                         </a>                        
                     </li>
                     <li class="nav-parent nav-expanded">
-	       				<a class="nav-link" href="{{Auth::user()->rol->name}}/EFM3">
+	       				<a class="nav-link" href="/{{Auth::user()->rol->name}}/EFM3">
                             <i class="nav-link" aria-hidden="true"></i>
                             <span>EFM 3 Años</span>
                         </a>                        
                     </li>
                     <li class="nav-parent nav-expanded">
-	       				<a class="nav-link" href="{{Auth::user()->rol->name}}/EFM1">
+	       				<a class="nav-link" href="/{{Auth::user()->rol->name}}/EFM1">
                             <i class="nav-link" aria-hidden="true"></i>
                             <span>EFM 1 Año</span>
                         </a>                        
                     </li>
                     <li class="nav-parent nav-expanded">
-	       				<a class="nav-link" href="{{Auth::user()->rol->name}}/mamografia">
+	       				<a class="nav-link" href="/{{Auth::user()->rol->name}}/mamografia">
                             <i class="nav-link" aria-hidden="true"></i>
                             <span>Mamografía</span>
                         </a>                        
                     </li>
                     <li class="nav-parent nav-expanded">
-	       				<a class="nav-link" href="{{Auth::user()->rol->name}}/ecotomografia">
+	       				<a class="nav-link" href="/{{Auth::user()->rol->name}}/ecotomografia">
                             <i class="nav-link" aria-hidden="true"></i>
                             <span>Ecotomografía</span>
                         </a>                        
