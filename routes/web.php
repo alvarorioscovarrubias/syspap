@@ -16,6 +16,8 @@ Route::get('Administrador/EFM3','Rol_SuperadminController@efm3');
 Route::get('Administrador/EFM1','Rol_SuperadminController@efm1');
 Route::get('Administrador/mamografia','Rol_SuperadminController@mamografia');
 Route::get('Administrador/ecotomografia','Rol_SuperadminController@eco');
+Route::get('Administrador/tecnicos','Rol_SuperadminController@tecnico');
+Route::get('Administrador/matrones','Rol_SuperadminController@matron');
 
 //TECNICO
 Route::get('Tecnico/pacientes','Rol_TecnicoController@pacientes');
