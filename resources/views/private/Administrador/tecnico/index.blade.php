@@ -21,26 +21,6 @@
                 <div id="datatable-editable_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer">
                     <div class="row">
                         <div class="col-lg-6">
-                            <div class="dataTables_length" id="datatable-editable_length">
-                                <label>
-                                    <select name="datatable-editable_length" aria-controls="datatable-editable" class="custom-select custom-select-sm form-control form-control-sm select2-hidden-accessible" data-select2-id="1" tabindex="-1" aria-hidden="true">
-                                        <option value="10" data-select2-id="3">10</option>
-                                        <option value="25">25</option><option value="50">50</option>
-                                        <option value="100">100</option>
-                                    </select>
-                                    <span class="select2 select2-container select2-container--bootstrap" dir="ltr" data-select2-id="2" style="width: 58.8px;">
-                                        <span class="selection">
-                                            <span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-datatable-editable_length-5f-container">
-                                                <span class="select2-selection__rendered" id="select2-datatable-editable_length-5f-container" role="textbox" aria-readonly="true" title="10">10</span>
-                                                <span class="select2-selection__arrow" role="presentation"><b role="presentation"></b>
-                                                </span>
-                                            </span>
-                                        </span>
-                                    <span class="dropdown-wrapper" aria-hidden="true"></span>
-                                </span> técnicos por página</label>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
                             <div id="datatable-editable_filter" class="dataTables_filter">
                                 <label>
                                     <input type="search" class="form-control pull-right" placeholder="Buscar..." aria-controls="datatable-editable">
