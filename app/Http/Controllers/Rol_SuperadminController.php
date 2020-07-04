@@ -55,4 +55,30 @@ class Rol_SuperadminController extends Controller
         return view('private.Administrador.matron.index');
     }
 
+    //MANTENEDORES
+
+    public function grupo_edad(){
+        return view('private.Administrador.mantenedores.grupo-edad.index');
+    }
+
+    public function resultado_pap(){
+        return view('private.Administrador.mantenedores.resultado-pap.index');
+    }
+
+    public function resultado_efm(){
+        return view('private.Administrador.mantenedores.resultado-efm.index');
+    }
+
+    public function resultado_mamografia(){
+        return view('private.Administrador.mantenedores.resultado-mamografia.index');
+    }
+
+    public function resultado_eco(){
+        return view('private.Administrador.mantenedores.resultado-eco.index');
+    }
+
+    public function nunca_efm(){
+        return view('private.Administrador.mantenedores.nunca-efm.index');
+    }
+
 }

@@ -19,6 +19,13 @@ Route::get('Administrador/ecotomografia','Rol_SuperadminController@eco');
 Route::get('Administrador/tecnicos','Rol_SuperadminController@tecnico');
 Route::get('Administrador/matrones','Rol_SuperadminController@matron');
 
+Route::get('/admin/mantenedor/grupo-edad','Rol_SuperadminController@grupo_edad');
+Route::get('/admin/mantenedor/resultado-pap','Rol_SuperadminController@resultado_pap');
+Route::get('/admin/mantenedor/resultado-efm','Rol_SuperadminController@resultado_efm');
+Route::get('/admin/mantenedor/resultado-mamografia','Rol_SuperadminController@resultado_mamografia');
+Route::get('/admin/mantenedor/resultado-eco','Rol_SuperadminController@resultado_eco');
+Route::get('/admin/mantenedor/nunca-efm','Rol_SuperadminController@nunca_efm');
+
 //TECNICO
 Route::get('Tecnico/pacientes','Rol_TecnicoController@pacientes');
 Route::get('Tecnico/PAP3','Rol_TecnicoController@pap3');
