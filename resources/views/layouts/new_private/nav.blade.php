@@ -48,7 +48,34 @@
 		                    </li>
 			            @endif
 	       			@endforeach--}}
-
+	       			@if(Auth::user()->rol->name == 'Administrador')
+						<li class="nav-parent nav-expanded">
+			            	<a class="nav-link" href="#">
+		                        <i class="" aria-hidden="true"></i>
+		                        <span>Mantenedores</span>
+		                    </a>
+		                    <ul class="nav nav-children">
+	                            <li>
+	                                <a class="nav-link " href="">Grupo Edad</a>
+	                            </li>
+	                            <li>
+	                                <a class="nav-link " href="">Resultado PAP</a>
+	                            </li>
+	                            <li>
+	                                <a class="nav-link " href="">Resultado EFM</a>
+	                            </li>
+	                            <li>
+	                                <a class="nav-link " href="">Resultado Mamografía</a>
+	                            </li>
+	                            <li>
+	                                <a class="nav-link " href="">Resultado Ecotomografía</a>
+	                            </li>
+	                            <li>
+	                                <a class="nav-link " href="">Nunca EFM</a>
+	                            </li>
+		                    </ul>
+		                </li>
+                    @endif
 	       			<li class="nav-parent nav-expanded">
 	       				<a class="nav-link" href="/{{Auth::user()->rol->name}}/pacientes">
                             <i class="nav-link" aria-hidden="true"></i>

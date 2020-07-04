@@ -1,6 +1,6 @@
 <header class="header">
 	<div class="logo-container">
-		<a href="" class="logo">
+		<a href="/home" class="logo">
 			<img src="{{asset('HTML/img/logopap.png')}}"  height="40" alt="SYSPAP" />
 		</a>
 		<div class="d-md-none toggle-sidebar-left" data-toggle-class="sidebar-left-opened" data-target="html" data-fire-event="sidebar-left-opened">
