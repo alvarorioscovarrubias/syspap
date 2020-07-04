@@ -39,7 +39,7 @@
                     </span>
 
                     <div class="wrap-input100 validate-input" data-validate = "Valid email is: a@b.c">
-                        <input id="email" type="email" class="input100" name="email" data-validate = "Valid email is: a@b.c" required autofocus>
+                        <input id="email" type="email" class="input100" name="email" data-validate = "Valid email is: a@b.c" required>
                         <span class="focus-input100" data-placeholder="Correo"></span>
                     </div>
 
@@ -60,15 +60,6 @@
                         </div>
                     </div>
 
-                    <div class="text-center p-t-115">
-                        <span class="txt1">
-                            Don’t have an account?
-                        </span>
-
-                        <a class="txt2" href="#">
-                            Sign Up
-                        </a>
-                    </div>
                 </form>
             </div>
         </div>

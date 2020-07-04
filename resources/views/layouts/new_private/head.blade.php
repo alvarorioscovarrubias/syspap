@@ -8,6 +8,7 @@
 	<meta name="author" content="okler.net">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600,800,900|Shadows+Into+Light" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
 	<link rel="stylesheet" href="{{ asset('porto_admin/vendor/bootstrap/css/bootstrap.css') }}" />
 	<link rel="stylesheet" href="{{ asset('porto_admin/vendor/animate/animate.css') }}">
 	<link rel="stylesheet" href="{{ asset('porto_admin/vendor/font-awesome/css/all.min.css') }}" />
@@ -20,6 +21,7 @@
 	<link rel="stylesheet" href="{{ asset('porto_admin/css/theme.css') }}" />
 	<link rel="stylesheet" href="{{ asset('porto_admin/css/skins/default.css') }}" />
 	<link rel="stylesheet" href="{{ asset('porto_admin/css/custom.css') }}">
+
 	<script src="{{ asset('porto_admin/vendor/modernizr/modernizr.js')}}"></script>
 
 	<style type="text/css">
