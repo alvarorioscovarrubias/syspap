@@ -1,7 +1,7 @@
 <header class="header">
 	<div class="logo-container">
 		<a href="/home" class="logo ml-5">
-			<img src="{{asset('HTML/img/logopap.png')}}"  height="40" alt="SYSPAP" />
+			<img src="{{asset('porto_admin/img/logopap.png')}}"  height="40" alt="SYSPAP" />
 		</a>
 		<div class="d-md-none toggle-sidebar-left" data-toggle-class="sidebar-left-opened" data-target="html" data-fire-event="sidebar-left-opened">
 			<i class="fas fa-bars" aria-label="Toggle sidebar"></i>
