@@ -40,7 +40,7 @@
                             <tbody>  
                                 <tr data-item-id="7" role="row" class="odd">
                                     <td>1</td>
-                                    <td></td>
+                                    <td>I</td>
                                     <td class="actions">
                                         <a href="#" class="on-default edit-row"><i class="fas fa-pencil-alt"></i></a>
                                         <a href="#" class="on-default remove-row"><i class="far fa-trash-alt"></i></a>
@@ -48,7 +48,7 @@
                                 </tr>
                                 <tr data-item-id="7" role="row" class="even">
                                     <td>2</td>
-                                    <td></td>
+                                    <td>G7</td>
                                     <td class="actions">
                                         <a href="#" class="on-default edit-row"><i class="fas fa-pencil-alt"></i></a>
                                         <a href="#" class="on-default remove-row"><i class="far fa-trash-alt"></i></a>
@@ -56,15 +56,31 @@
                                 </tr>
                                 <tr data-item-id="7" role="row" class="odd">
                                     <td>3</td>
-                                    <td></td>
+                                    <td>G8</td>
+                                    <td class="actions">
+                                        <a href="#" class="on-default edit-row"><i class="fas fa-pencil-alt"></i></a>
+                                        <a href="#" class="on-default remove-row"><i class="far fa-trash-alt"></i></a>
+                                    </td>
+                                </tr>
+                                <tr data-item-id="7" role="row" class="even">
+                                    <td>4</td>
+                                    <td>J1</td>
                                     <td class="actions">
                                         <a href="#" class="on-default edit-row"><i class="fas fa-pencil-alt"></i></a>
                                         <a href="#" class="on-default remove-row"><i class="far fa-trash-alt"></i></a>
                                     </td>
                                 </tr>
                                 <tr data-item-id="7" role="row" class="odd">
-                                    <td>4</td>
-                                    <td></td>
+                                    <td>5</td>
+                                    <td>J1</td>
+                                    <td class="actions">
+                                        <a href="#" class="on-default edit-row"><i class="fas fa-pencil-alt"></i></a>
+                                        <a href="#" class="on-default remove-row"><i class="far fa-trash-alt"></i></a>
+                                    </td>
+                                </tr>
+                                <tr data-item-id="7" role="row" class="even">
+                                    <td>6</td>
+                                    <td>03</td>
                                     <td class="actions">
                                         <a href="#" class="on-default edit-row"><i class="fas fa-pencil-alt"></i></a>
                                         <a href="#" class="on-default remove-row"><i class="far fa-trash-alt"></i></a>

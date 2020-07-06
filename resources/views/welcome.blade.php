@@ -81,7 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    <img src="{{asset('HTML/img/logopap.png')}}"  height="250" alt="SYSPAP" />
+                    <img src="{{asset('porto_admin/img/logopap.png')}}"  height="250" alt="SYSPAP" />
                 </div>
                 <div class="title m-b-md">
                     SYSPAP
