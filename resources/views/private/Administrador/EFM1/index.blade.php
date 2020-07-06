@@ -14,7 +14,7 @@
                 <div class="row">
                     <div class="col-sm-6">
                         <div class="mb-3">
-                            <button id="addToTable" class="btn btn-primary">Agregar EFM <i class="fas fa-plus"></i></button>
+                            @include('private.Administrador.EFM1.create')
                         </div>
                     </div>
                 </div>
@@ -55,8 +55,8 @@
                                     <td>Vigente</td>
                                     <td>01/02/2020</td>
                                     <td class="actions">
-                                        <a href="#" class="on-default edit-row"><i class="fas fa-pencil-alt"></i></a>
-                                        <a href="#" class="on-default remove-row"><i class="far fa-trash-alt"></i></a>
+                                        @include('private.Administrador.EFM1.edit')
+                                        @include('private.Administrador.EFM1.destroy')
                                     </td>
                                 </tr>
                                 <tr data-item-id="8" role="row" class="even">
@@ -69,8 +69,8 @@
                                     <td>Vigente</td>
                                     <td>01/02/2020</td>
                                     <td class="actions">
-                                        <a href="#" class="on-default edit-row"><i class="fas fa-pencil-alt"></i></a>
-                                        <a href="#" class="on-default remove-row"><i class="far fa-trash-alt"></i></a>
+                                        @include('private.Administrador.EFM1.edit')
+                                        @include('private.Administrador.EFM1.destroy')
                                     </td>
                                 </tr>
                             <?php } ?>

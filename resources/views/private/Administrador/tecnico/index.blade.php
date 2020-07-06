@@ -14,7 +14,7 @@
                 <div class="row">
                     <div class="col-sm-6">
                         <div class="mb-3">
-                            <button id="addToTable" class="btn btn-primary">Agregar Técnico <i class="fas fa-plus"></i></button>
+                            @include('private.Administrador.tecnico.create')
                         </div>
                     </div>
                 </div>
@@ -55,8 +55,8 @@
                                     <td>F</td>
                                     <td>Enfermera</td>
                                     <td class="actions">
-                                        <a href="#" class="on-default edit-row"><i class="fas fa-pencil-alt"></i></a>
-                                        <a href="#" class="on-default remove-row"><i class="far fa-trash-alt"></i></a>
+                                        @include('private.Administrador.tecnico.edit')
+                                        @include('private.Administrador.tecnico.destroy')
                                     </td>
                                 </tr>
                                 <tr data-item-id="8" role="row" class="even">
@@ -69,8 +69,8 @@
                                     <td>M</td>
                                     <td>Técnico en Enfermería</td>
                                     <td class="actions">
-                                        <a href="#" class="on-default edit-row"><i class="fas fa-pencil-alt"></i></a>
-                                        <a href="#" class="on-default remove-row"><i class="far fa-trash-alt"></i></a>
+                                        @include('private.Administrador.tecnico.edit')
+                                        @include('private.Administrador.tecnico.destroy')
                                     </td>
                                 </tr>
                             <?php } ?>

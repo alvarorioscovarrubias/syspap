@@ -14,7 +14,7 @@
                 <div class="row">
                     <div class="col-sm-6">
                         <div class="mb-3">
-                            <button id="addToTable" class="btn btn-primary">Agregar Matrón <i class="fas fa-plus"></i></button>
+                            @include('private.Administrador.matron.create')
                         </div>
                     </div>
                 </div>
@@ -53,8 +53,8 @@
                                     <td>21/01/1980</td>
                                     <td>F</td>
                                     <td class="actions">
-                                        <a href="#" class="on-default edit-row"><i class="fas fa-pencil-alt"></i></a>
-                                        <a href="#" class="on-default remove-row"><i class="far fa-trash-alt"></i></a>
+                                        @include('private.Administrador.matron.edit')
+                                        @include('private.Administrador.matron.destroy')
                                     </td>
                                 </tr>
                                 <tr data-item-id="8" role="row" class="even">
@@ -66,8 +66,8 @@
                                     <td>14/05/1985</td>
                                     <td>M</td>
                                     <td class="actions">
-                                        <a href="#" class="on-default edit-row"><i class="fas fa-pencil-alt"></i></a>
-                                        <a href="#" class="on-default remove-row"><i class="far fa-trash-alt"></i></a>
+                                        @include('private.Administrador.matron.edit')
+                                        @include('private.Administrador.matron.destroy')
                                     </td>
                                 </tr>
                             <?php } ?>
