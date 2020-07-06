@@ -14,7 +14,7 @@
                 <div class="row">
                     <div class="col-sm-6">
                         <div class="mb-3">
-                            <button id="addToTable" class="btn btn-primary">Agregar Paciente <i class="fas fa-plus"></i></button>
+                            @include('private.Tecnico.pacientes.create')
                         </div>
                     </div>
                 </div>
@@ -67,8 +67,9 @@
                                     <td>No</td>
                                     <td>R</td>
                                     <td class="actions">
-                                        <a href="#" class="on-default edit-row"><i class="fas fa-pencil-alt"></i></a>
-                                        <a href="#" class="on-default remove-row"><i class="far fa-trash-alt"></i></a>
+                                        @include('private.Administrador.pacientes.edit')
+                                        @include('private.Administrador.pacientes.detail')
+                                        @include('private.Administrador.pacientes.destroy')
                                     </td>
                                 </tr>
                                 <tr data-item-id="8" role="row" class="even">
@@ -87,8 +88,9 @@
                                     <td>Si</td>
                                     <td>A</td>
                                     <td class="actions">
-                                        <a href="#" class="on-default edit-row"><i class="fas fa-pencil-alt"></i></a>
-                                        <a href="#" class="on-default remove-row"><i class="far fa-trash-alt"></i></a>
+                                        @include('private.Administrador.pacientes.edit')
+                                        @include('private.Administrador.pacientes.detail')
+                                        @include('private.Administrador.pacientes.destroy')
                                     </td>
                                 </tr>
                             <?php } ?>
