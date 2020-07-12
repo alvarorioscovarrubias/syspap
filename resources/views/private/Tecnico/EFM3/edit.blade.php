@@ -41,14 +41,17 @@
                     </div>
                 </div>
                 <div class="form-group row">
-                    <div class="col">
+                    <div class="col-lg">
                         <label class="form-control-label">
                             Resultado
                         </label>
-                        {!!Form::number('altura',null,['class'=>'form-control','placeholder'=>'Ingrese texto...','required'])!!}
+                        <select class="form-control" multiple="multiple" data-plugin-multiselect="" data-plugin-options="{ &quot;maxHeight&quot;: 200 }" id="ms_example0" style="display: none;">
+                            <option value="1" >I</option>
+                            <option value="2" >G8</option>
+                            <option value="3" selected>J1</option>
+                        </select>
                     </div>
                 </div>
-
             </div>
             <div class="modal-footer">
                 <button class="btn btn-secondary" data-dismiss="modal" type="button">
