@@ -14,7 +14,7 @@
                 <div class="row">
                     <div class="col-sm-6">
                         <div class="mb-3">
-                            <button id="addToTable" class="btn btn-primary">Agregar Resultado <i class="fas fa-plus"></i></button>
+                            @include('private.Administrador.mantenedores.resultado-efm.create')
                         </div>
                     </div>
                 </div>
@@ -42,32 +42,32 @@
                                     <td>1</td>
                                     <td>MX</td>
                                     <td class="actions">
-                                        <a href="#" class="on-default edit-row"><i class="fas fa-pencil-alt"></i></a>
-                                        <a href="#" class="on-default remove-row"><i class="far fa-trash-alt"></i></a>
+                                        @include('private.Administrador.mantenedores.resultado-efm.edit')
+                                        @include('private.Administrador.mantenedores.resultado-efm.destroy')
                                     </td>
                                 </tr>
                                 <tr data-item-id="7" role="row" class="even">
                                     <td>2</td>
                                     <td>NORMAL</td>
                                     <td class="actions">
-                                        <a href="#" class="on-default edit-row"><i class="fas fa-pencil-alt"></i></a>
-                                        <a href="#" class="on-default remove-row"><i class="far fa-trash-alt"></i></a>
+                                        @include('private.Administrador.mantenedores.resultado-mamografia.edit')
+                                        @include('private.Administrador.mantenedores.resultado-mamografia.destroy')
                                     </td>
                                 </tr>
                                 <tr data-item-id="7" role="row" class="odd">
                                     <td>3</td>
                                     <td>PM</td>
                                     <td class="actions">
-                                        <a href="#" class="on-default edit-row"><i class="fas fa-pencil-alt"></i></a>
-                                        <a href="#" class="on-default remove-row"><i class="far fa-trash-alt"></i></a>
+                                        @include('private.Administrador.mantenedores.resultado-mamografia.edit')
+                                        @include('private.Administrador.mantenedores.resultado-mamografia.destroy')
                                     </td>
                                 </tr>
                                 <tr data-item-id="7" role="row" class="odd">
                                     <td>4</td>
                                     <td>OBS. FIBROADENOMA</td>
                                     <td class="actions">
-                                        <a href="#" class="on-default edit-row"><i class="fas fa-pencil-alt"></i></a>
-                                        <a href="#" class="on-default remove-row"><i class="far fa-trash-alt"></i></a>
+                                        @include('private.Administrador.mantenedores.resultado-mamografia.edit')
+                                        @include('private.Administrador.mantenedores.resultado-mamografia.destroy')
                                     </td>
                                 </tr>
                             </tbody>
