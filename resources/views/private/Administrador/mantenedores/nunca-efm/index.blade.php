@@ -14,7 +14,7 @@
                 <div class="row">
                     <div class="col-sm-6">
                         <div class="mb-3">
-                            <button id="addToTable" class="btn btn-primary">Agregar <i class="fas fa-plus"></i></button>
+                            @include('private.Administrador.mantenedores.nunca-efm.create')
                         </div>
                     </div>
                 </div>
@@ -42,16 +42,16 @@
                                     <td>1</td>
                                     <td>Nunca EFM</td>
                                     <td class="actions">
-                                        <a href="#" class="on-default edit-row"><i class="fas fa-pencil-alt"></i></a>
-                                        <a href="#" class="on-default remove-row"><i class="far fa-trash-alt"></i></a>
+                                        @include('private.Administrador.mantenedores.nunca-efm.edit')
+                                        @include('private.Administrador.mantenedores.nunca-efm.destroy')
                                     </td>
                                 </tr>
                                 <tr data-item-id="7" role="row" class="even">
                                     <td>2</td>
                                     <td>PAP Y EFM</td>
                                     <td class="actions">
-                                        <a href="#" class="on-default edit-row"><i class="fas fa-pencil-alt"></i></a>
-                                        <a href="#" class="on-default remove-row"><i class="far fa-trash-alt"></i></a>
+                                        @include('private.Administrador.mantenedores.nunca-efm.edit')
+                                        @include('private.Administrador.mantenedores.nunca-efm.destroy')
                                     </td>
                                 </tr>
                             </tbody>
