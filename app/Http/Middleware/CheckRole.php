@@ -13,6 +13,10 @@ class CheckRole
 	    if ($role != Auth::user()->rol->name) {
 	        return redirect('home');
 	    }
+
+	    if (!auth()->check()) { 
+            return redirect()->route('login');
+        }
 	    
 	    return $next($request);
     }
