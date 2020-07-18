@@ -6,7 +6,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/home','Rol_SuperadminController@index');
+Route::get('/home','Rol_SuperadminController@index')->middleware('auth');
 
 //ADMINISTRADOR
 Route::group(['middleware' => 'role:Administrador'], function(){
