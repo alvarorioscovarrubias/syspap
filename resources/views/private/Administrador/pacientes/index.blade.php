@@ -14,7 +14,7 @@
                 <div class="row">
                     <div class="col-sm-6">
                         <div class="mb-3">
-                            @include('private.Tecnico.pacientes.create')
+                            @include('private.Administrador.pacientes.create')
                         </div>
                     </div>
                 </div>
