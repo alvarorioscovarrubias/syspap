@@ -229,15 +229,19 @@ Theme Version: 	2.3.0
 			},
 			yaxis: {
 				min: 0,
-				max: 200,
+				max: 250,
 				color: 'rgba(0,0,0,0.1)'
 			},
 			xaxis: {
-				color: 'rgba(0,0,0,0)'
+				min: 0,
+				max: 10,
+				color: 'rgba(0,0,0,0)',
+				display: true
 			},
 			tooltip: true,
 			tooltipOpts: {
-				content: '%s: Value of %x is %y',
+				//content: '%s: Valor de %x es %y',
+				content: '%s: Cantidad %y',
 				shifts: {
 					x: -60,
 					y: 25
@@ -246,7 +250,219 @@ Theme Version: 	2.3.0
 			}
 		});
 
-		}
+	}
+
+	if( $('#flotDashBasic2').get(0) ) {
+		var flotDashBasic = $.plot('#flotDashBasic2', flotDashBasicData2, {
+			series: {
+				lines: {
+					show: true,
+					fill: true,
+					lineWidth: 1,
+					fillColor: {
+						colors: [{
+							opacity: 0.45
+						}, {
+							opacity: 0.45
+						}]
+					}
+				},
+				points: {
+					show: true
+				},
+				shadowSize: 0
+			},
+			grid: {
+				hoverable: true,
+				clickable: true,
+				borderColor: 'rgba(0,0,0,0.1)',
+				borderWidth: 1,
+				labelMargin: 15,
+				backgroundColor: 'transparent'
+			},
+			yaxis: {
+				min: 0,
+				max: 250,
+				color: 'rgba(0,0,0,0.1)'
+			},
+			xaxis: {
+				min: 0,
+				max: 6,
+				color: 'rgba(0,0,0,0)',
+				display: true
+			},
+			tooltip: true,
+			tooltipOpts: {
+				//content: '%s: Valor de %x es %y',
+				content: '%s: Cantidad %y',
+				shifts: {
+					x: -60,
+					y: 25
+				},
+				defaultTheme: false
+			}
+		});
+
+	}
+
+	if( $('#flotDashBasic3').get(0) ) {
+		var flotDashBasic = $.plot('#flotDashBasic3', flotDashBasicData3, {
+			series: {
+				lines: {
+					show: true,
+					fill: true,
+					lineWidth: 1,
+					fillColor: {
+						colors: [{
+							opacity: 0.45
+						}, {
+							opacity: 0.45
+						}]
+					}
+				},
+				points: {
+					show: true
+				},
+				shadowSize: 0
+			},
+			grid: {
+				hoverable: true,
+				clickable: true,
+				borderColor: 'rgba(0,0,0,0.1)',
+				borderWidth: 1,
+				labelMargin: 15,
+				backgroundColor: 'transparent'
+			},
+			yaxis: {
+				min: 0,
+				max: 100,
+				color: 'rgba(0,0,0,0.1)'
+			},
+			xaxis: {
+				min: 0,
+				max: 10,
+				color: 'rgba(0,0,0,0)',
+				display: true
+			},
+			tooltip: true,
+			tooltipOpts: {
+				//content: '%s: Valor de %x es %y',
+				content: '%s: Cantidad %y',
+				shifts: {
+					x: -60,
+					y: 25
+				},
+				defaultTheme: false
+			}
+		});
+
+	}
+
+	if( $('#flotDashBasic4').get(0) ) {
+		var flotDashBasic = $.plot('#flotDashBasic4', flotDashBasicData4, {
+			series: {
+				lines: {
+					show: true,
+					fill: true,
+					lineWidth: 1,
+					fillColor: {
+						colors: [{
+							opacity: 0.45
+						}, {
+							opacity: 0.45
+						}]
+					}
+				},
+				points: {
+					show: true
+				},
+				shadowSize: 0
+			},
+			grid: {
+				hoverable: true,
+				clickable: true,
+				borderColor: 'rgba(0,0,0,0.1)',
+				borderWidth: 1,
+				labelMargin: 15,
+				backgroundColor: 'transparent'
+			},
+			yaxis: {
+				min: 0,
+				max: 250,
+				color: 'rgba(0,0,0,0.1)'
+			},
+			xaxis: {
+				min: 0,
+				max: 10,
+				color: 'rgba(0,0,0,0)',
+				display: true
+			},
+			tooltip: true,
+			tooltipOpts: {
+				//content: '%s: Valor de %x es %y',
+				content: '%s: Cantidad %y',
+				shifts: {
+					x: -60,
+					y: 25
+				},
+				defaultTheme: false
+			}
+		});
+
+	}
+
+	if( $('#flotDashBasic5').get(0) ) {
+		var flotDashBasic = $.plot('#flotDashBasic5', flotDashBasicData5, {
+			series: {
+				lines: {
+					show: true,
+					fill: true,
+					lineWidth: 1,
+					fillColor: {
+						colors: [{
+							opacity: 0.45
+						}, {
+							opacity: 0.45
+						}]
+					}
+				},
+				points: {
+					show: true
+				},
+				shadowSize: 0
+			},
+			grid: {
+				hoverable: true,
+				clickable: true,
+				borderColor: 'rgba(0,0,0,0.1)',
+				borderWidth: 1,
+				labelMargin: 15,
+				backgroundColor: 'transparent'
+			},
+			yaxis: {
+				min: 0,
+				max: 100,
+				color: 'rgba(0,0,0,0.1)'
+			},
+			xaxis: {
+				min: 0,
+				max: 6,
+				color: 'rgba(0,0,0,0)',
+				display: true
+			},
+			tooltip: true,
+			tooltipOpts: {
+				//content: '%s: Valor de %x es %y',
+				content: '%s: Cantidad %y',
+				shifts: {
+					x: -60,
+					y: 25
+				},
+				defaultTheme: false
+			}
+		});
+
+	}
 
 	/*
 	Flot: Real-Time

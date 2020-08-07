@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Sistema PAP</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
@@ -72,16 +72,16 @@
                     @else
                         <a href="{{ route('login') }}">Entrar</a>
 
-                        @if (Route::has('register'))
+                        {{--@if (Route::has('register'))
                             <a href="{{ route('register') }}">Registrarse</a>
-                        @endif
+                        @endif--}}
                     @endauth
                 </div>
             @endif
 
             <div class="content">
                 <div class="title m-b-md">
-                    <img src="{{asset('HTML/img/logopap.png')}}"  height="250" alt="SYSPAP" />
+                    <img src="{{asset('porto_admin/img/logopap.png')}}"  height="250" alt="SYSPAP" />
                 </div>
                 <div class="title m-b-md">
                     SYSPAP
