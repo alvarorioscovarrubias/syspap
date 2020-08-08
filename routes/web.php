@@ -41,7 +41,7 @@ Route::group(['middleware' => 'role:Tecnico'], function(){
 });
 
 //MANTENEDORES
-Route::group(['middleware' => 'web'], function(){
+//Route::group(['middleware' => 'web'], function(){
 
 	Route::resource('mantenedor-ecotomografia','EcotomografiaController');
 	Route::delete('mantenedor-ecotomografia/{id}', array('uses'=>'EcotomografiaController@destroy','as'=>'mantenedor-ecotomografia.delete'));
@@ -67,8 +67,8 @@ Route::group(['middleware' => 'web'], function(){
 	Route::resource('mantenedor-pap3','Pap3Controller');
 	Route::delete('mantenedor-pap3/{id}', array('uses'=>'Pap3Controller@destroy','as'=>'mantenedor-pap3.delete'));
 
-	Route::resource('mantenedor-resultado-ecotomografia','ResultadoEcotomografiaController');
-	Route::delete('mantenedor-resultado-ecotomografia/{id}', array('uses'=>'ResultadoEcotomografiaController@destroy','as'=>'mantenedor-resultado-ecotomografia.delete'));
+	Route::resource('mantenedor-resultado-eco','ResultadoEcotomografiaController');
+	Route::delete('mantenedor-resultado-eco/{id}', array('uses'=>'ResultadoEcotomografiaController@destroy','as'=>'mantenedor-resultado-eco.delete'));
 
 	Route::resource('mantenedor-resultado-efm','ResultadoEfmController');
 	Route::delete('mantenedor-resultado-efm/{id}', array('uses'=>'ResultadoEfmController@destroy','as'=>'mantenedor-resultado-efm.delete'));
@@ -76,9 +76,9 @@ Route::group(['middleware' => 'web'], function(){
 	Route::resource('mantenedor-resultado-mamografia','ResultadoMamografiaController');
 	Route::delete('mantenedor-resultado-mamografia/{id}', array('uses'=>'ResultadoMamografiaController@destroy','as'=>'mantenedor-resultado-mamografia.delete'));
 
-	Route::resource('mantenedor-resultado-pap','ResultadoPapController');
-	Route::delete('mantenedor-resultado-pap/{id}', array('uses'=>'ResultadoPapController@destroy','as'=>'mantenedor-resultado-pap.delete'));
+	Route::resource('mantenedor-res-pap','ResultadoPapController');
+	Route::delete('mantenedor-res-pap/{id}', array('uses'=>'ResultadoPapController@destroy','as'=>'mantenedor-res-pap.delete'));
 
 	Route::resource('mantenedor-sexo','SexoController');
 	Route::delete('mantenedor-sexo/{id}', array('uses'=>'SexoController@destroy','as'=>'mantenedor-sexo.delete'));
-});
+//});

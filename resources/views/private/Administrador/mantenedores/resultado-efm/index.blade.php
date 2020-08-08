@@ -27,39 +27,17 @@
                                 <th class="sorting_disabled" rowspan="1" colspan="1" aria-label="Actions" style="width: 120.6px;">Acciones</th>
                             </tr>
                         </thead>
-                        <tbody>  
-                            <tr data-item-id="7" role="row" class="odd">
-                                <td>1</td>
-                                <td>MX</td>
+                        <tbody>
+                            @foreach ($resultadoefm as $res)
+                            <tr role="row" class="odd">
+                                <td>{{ $res->id }}</td>
+                                <td>{{ $res->nombre }}</td>
                                 <td class="actions">
                                     @include('private.Administrador.mantenedores.resultado-efm.edit')
                                     @include('private.Administrador.mantenedores.resultado-efm.destroy')
                                 </td>
                             </tr>
-                            <tr data-item-id="7" role="row" class="even">
-                                <td>2</td>
-                                <td>NORMAL</td>
-                                <td class="actions">
-                                    @include('private.Administrador.mantenedores.resultado-mamografia.edit')
-                                    @include('private.Administrador.mantenedores.resultado-mamografia.destroy')
-                                </td>
-                            </tr>
-                            <tr data-item-id="7" role="row" class="odd">
-                                <td>3</td>
-                                <td>PM</td>
-                                <td class="actions">
-                                    @include('private.Administrador.mantenedores.resultado-mamografia.edit')
-                                    @include('private.Administrador.mantenedores.resultado-mamografia.destroy')
-                                </td>
-                            </tr>
-                            <tr data-item-id="7" role="row" class="odd">
-                                <td>4</td>
-                                <td>OBS. FIBROADENOMA</td>
-                                <td class="actions">
-                                    @include('private.Administrador.mantenedores.resultado-mamografia.edit')
-                                    @include('private.Administrador.mantenedores.resultado-mamografia.destroy')
-                                </td>
-                            </tr>
+                            @endforeach
                         </tbody>
                     </table>
                 </div>

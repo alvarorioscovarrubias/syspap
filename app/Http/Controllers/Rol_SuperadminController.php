@@ -11,6 +11,11 @@ use Illuminate\Support\Facades\Storage;
 /*use App\Examenes as examenes;*/
 use Session;
 use Auth;
+use App\GrupoEdad as grupoedad;
+use App\ResultadoPap as resultadopap;
+use App\ResultadoEfm as resultadoefm;
+use App\ResultadoMamografia as resultadomamo;
+use App\ResultadoEcotomografia as resultadoeco;
 
 class Rol_SuperadminController extends Controller
 {
@@ -58,23 +63,28 @@ class Rol_SuperadminController extends Controller
     //MANTENEDORES
 
     public function grupo_edad(){
-        return view('private.Administrador.mantenedores.grupo-edad.index');
+        $grupoedad = grupoedad::all();
+        return view('private.Administrador.mantenedores.grupo-edad.index',compact('grupoedad'));
     }
 
     public function resultado_pap(){
-        return view('private.Administrador.mantenedores.resultado-pap.index');
+        $resultadopap = resultadopap::all();
+        return view('private.Administrador.mantenedores.resultado-pap.index',compact('resultadopap'));
     }
 
     public function resultado_efm(){
-        return view('private.Administrador.mantenedores.resultado-efm.index');
+        $resultadoefm = resultadoefm::all();
+        return view('private.Administrador.mantenedores.resultado-efm.index',compact('resultadoefm'));
     }
 
     public function resultado_mamografia(){
-        return view('private.Administrador.mantenedores.resultado-mamografia.index');
+        $resultadomamo = resultadomamo::all();
+        return view('private.Administrador.mantenedores.resultado-mamografia.index',compact('resultadomamo'));
     }
 
     public function resultado_eco(){
-        return view('private.Administrador.mantenedores.resultado-eco.index');
+        $resultadoeco = resultadoeco::all();
+        return view('private.Administrador.mantenedores.resultado-eco.index',compact('resultadoeco'));
     }
 
     public function nunca_efm(){
