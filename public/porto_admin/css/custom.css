@@ -1,1 +1,5 @@
 /* Add here all your CSS customizations */
+
+.actions {
+	display: flex;
+}

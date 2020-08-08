@@ -1,23 +1,23 @@
-<a href="" type="button "class="on-default remove-row" data-toggle="modal" data-target="#edit">
+<button class="btn btn-success btn-sm mr-1" data-toggle="modal" data-target="#edit_{{ $res->id }}">
     <i class="fas fa-pencil-alt"></i>
-</a>
+</button>
 
-<div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="edit" role="dialog" tabindex="-1">
+<div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="edit_{{ $res->id }}" role="dialog" tabindex="-1">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
+            {!! Form::open(['route' => ['mantenedor-resultado-efm.update',$res->id], 'method' => 'PUT']) !!}
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLabel">
-                    Editar Paciente: Maria Elena Castro Castro
+                    Editar Resultado: {{ $res->nombre }}
                 </h5>
                 <button aria-label="Close" class="close" data-dismiss="modal" type="button">
                 </button>
             </div>
-
             <div class="modal-body">
                 <div class="form-group row">
                   <div class="col-md-12">
                       <label for="">Nombre</label>
-                      {!!Form::text('nombre',null,['class'=>"form-control", 'placeholder'=>"Ingrese valor" , 'required', 'maxlength'=>"8"])!!}
+                      {!!Form::text('nombre',$res->nombre,['class'=>"form-control", 'required'])!!}
                   </div>
                 </div>
             </div>
@@ -29,6 +29,7 @@
                     Actualizar
                 </button>
             </div>
+            {!!Form::close()!!}
         </div>
     </div>
 </div>

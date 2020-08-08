@@ -28,54 +28,16 @@
                             </tr>
                         </thead>
                         <tbody>  
-                            <tr data-item-id="7" role="row" class="odd">
-                                <td>1</td>
-                                <td>I</td>
+                            @foreach ($resultadopap as $res)
+                            <tr role="row" class="odd">
+                                <td>{{ $res->id }}</td>
+                                <td>{{ $res->nombre }}</td>
                                 <td class="actions">
                                     @include('private.Administrador.mantenedores.resultado-pap.edit')
                                     @include('private.Administrador.mantenedores.resultado-pap.destroy')
                                 </td>
                             </tr>
-                            <tr data-item-id="7" role="row" class="even">
-                                <td>2</td>
-                                <td>G7</td>
-                                <td class="actions">
-                                    @include('private.Administrador.mantenedores.resultado-pap.edit')
-                                    @include('private.Administrador.mantenedores.resultado-pap.destroy')
-                                </td>
-                            </tr>
-                            <tr data-item-id="7" role="row" class="odd">
-                                <td>3</td>
-                                <td>G8</td>
-                                <td class="actions">
-                                    @include('private.Administrador.mantenedores.resultado-pap.edit')
-                                    @include('private.Administrador.mantenedores.resultado-pap.destroy')
-                                </td>
-                            </tr>
-                            <tr data-item-id="7" role="row" class="even">
-                                <td>4</td>
-                                <td>J1</td>
-                                <td class="actions">
-                                    @include('private.Administrador.mantenedores.resultado-pap.edit')
-                                    @include('private.Administrador.mantenedores.resultado-pap.destroy')
-                                </td>
-                            </tr>
-                            <tr data-item-id="7" role="row" class="odd">
-                                <td>5</td>
-                                <td>J1</td>
-                                <td class="actions">
-                                    @include('private.Administrador.mantenedores.resultado-pap.edit')
-                                    @include('private.Administrador.mantenedores.resultado-pap.destroy')
-                                </td>
-                            </tr>
-                            <tr data-item-id="7" role="row" class="even">
-                                <td>6</td>
-                                <td>03</td>
-                                <td class="actions">
-                                    @include('private.Administrador.mantenedores.resultado-pap.edit')
-                                    @include('private.Administrador.mantenedores.resultado-pap.destroy')
-                                </td>
-                            </tr>
+                            @endforeach
                         </tbody>
                     </table>
                 </div>

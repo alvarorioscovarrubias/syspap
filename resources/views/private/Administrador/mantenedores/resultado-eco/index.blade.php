@@ -27,31 +27,17 @@
                                 <th class="sorting_disabled" rowspan="1" colspan="1" aria-label="Actions" style="width: 120.6px;">Acciones</th>
                             </tr>
                         </thead>
-                        <tbody>  
-                            <tr data-item-id="7" role="row" class="odd">
-                                <td>1</td>
-                                <td>BIRADS 0</td>
+                        <tbody>
+                            @foreach ($resultadoeco as $res)  
+                            <tr role="row" class="odd">
+                                <td>{{ $res->id }}</td>
+                                <td>{{ $res->nombre }}</td>
                                 <td class="actions">
                                     @include('private.Administrador.mantenedores.resultado-eco.edit')
                                     @include('private.Administrador.mantenedores.resultado-eco.destroy')
                                 </td>
                             </tr>
-                            <tr data-item-id="7" role="row" class="even">
-                                <td>2</td>
-                                <td>BIRADS 1</td>
-                                <td class="actions">
-                                    @include('private.Administrador.mantenedores.resultado-eco.edit')
-                                    @include('private.Administrador.mantenedores.resultado-eco.destroy')
-                                </td>
-                            </tr>
-                            <tr data-item-id="7" role="row" class="odd">
-                                <td>3</td>
-                                <td>BIRADS 2</td>
-                                <td class="actions">
-                                    @include('private.Administrador.mantenedores.resultado-eco.edit')
-                                    @include('private.Administrador.mantenedores.resultado-eco.destroy')
-                                </td>
-                            </tr>
+                            @endforeach
                         </tbody>
                     </table>
                 </div>
