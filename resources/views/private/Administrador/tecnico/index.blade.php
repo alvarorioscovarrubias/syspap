@@ -28,42 +28,28 @@
                                 <th rowspan="1" colspan="1">Ap Paterno</th>
                                 <th rowspan="1" colspan="1">Ap Materno</th>
                                 <th rowspan="1" colspan="1">Fecha Nacimiento</th>
-                                <th rowspan="1" colspan="1">Sexo</th>
                                 <th rowspan="1" colspan="1">Especialidad</th>
+                                <th rowspan="1" colspan="1">Email</th>
                                 <th class="sorting_disabled" rowspan="1" colspan="1" aria-label="Actions" style="width: 120.6px;">Acciones</th>
                             </tr>
                         </thead>
                         <tbody>
-                        <?php for ($i=0; $i < 1; $i++) { ?>   
+                        @foreach ($tecnico as $tec)  
                             <tr data-item-id="7" role="row" class="odd">
-                                <td>18.485.623</td>
-                                <td>5</td>
-                                <td>Maria Elena</td>
-                                <td>Castro</td>
-                                <td>Castro</td>
-                                <td>21/01/1980</td>
-                                <td>F</td>
-                                <td>Enfermera</td>
+                                <td>{{ $tec->rut }}</td>
+                                <td>{{ $tec->dv }}</td>
+                                <td>{{ $tec->nombres }}</td>
+                                <td>{{ $tec->apellido_paterno }}</td>
+                                <td>{{ $tec->apellido_materno }}</td>
+                                <td>{{ $tec->fecha_nacimiento }}</td>
+                                <td>{{ $tec->especialidad }}</td>
+                                <td>{{ $tec->email }}</td>
                                 <td class="actions">
                                     @include('private.Administrador.tecnico.edit')
                                     @include('private.Administrador.tecnico.destroy')
                                 </td>
                             </tr>
-                            <tr data-item-id="8" role="row" class="even">
-                                <td>18.485.623</td>
-                                <td>5</td>
-                                <td>Juan José</td>
-                                <td>Pérez</td>
-                                <td>Rodriguez</td>
-                                <td>14/05/1985</td>
-                                <td>M</td>
-                                <td>Técnico en Enfermería</td>
-                                <td class="actions">
-                                    @include('private.Administrador.tecnico.edit')
-                                    @include('private.Administrador.tecnico.destroy')
-                                </td>
-                            </tr>
-                        <?php } ?>
+                        @endforeach
                         </tbody>
                     </table>
                 </div>

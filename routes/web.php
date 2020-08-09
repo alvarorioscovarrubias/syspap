@@ -81,4 +81,10 @@ Route::group(['middleware' => 'role:Tecnico'], function(){
 
 	Route::resource('mantenedor-sexo','SexoController');
 	Route::delete('mantenedor-sexo/{id}', array('uses'=>'SexoController@destroy','as'=>'mantenedor-sexo.delete'));
+
+	Route::resource('mantenedor-nunca','NuncaEfmController');
+	Route::delete('mantenedor-nunca/{id}', array('uses'=>'NuncaEfmController@destroy','as'=>'mantenedor-nunca.delete'));
+
+	Route::resource('mantenedor-tecnico','TecnicoController');
+	Route::delete('mantenedor-tecnico/{id}', array('uses'=>'TecnicoController@destroy','as'=>'mantenedor-tecnico.delete'));
 //});

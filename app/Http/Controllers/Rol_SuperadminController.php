@@ -16,6 +16,8 @@ use App\ResultadoPap as resultadopap;
 use App\ResultadoEfm as resultadoefm;
 use App\ResultadoMamografia as resultadomamo;
 use App\ResultadoEcotomografia as resultadoeco;
+use App\NuncaEfm as nunca;
+use App\Tecnico as tecnico;
 
 class Rol_SuperadminController extends Controller
 {
@@ -53,7 +55,8 @@ class Rol_SuperadminController extends Controller
     }
 
     public function tecnico(){
-        return view('private.Administrador.tecnico.index');
+        $tecnico = tecnico::all();
+        return view('private.Administrador.tecnico.index',compact('tecnico'));
     }
 
     public function matron(){
@@ -88,7 +91,8 @@ class Rol_SuperadminController extends Controller
     }
 
     public function nunca_efm(){
-        return view('private.Administrador.mantenedores.nunca-efm.index');
+        $nunca = nunca::all();
+        return view('private.Administrador.mantenedores.nunca-efm.index',compact('nunca'));
     }
 
 }

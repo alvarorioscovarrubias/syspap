@@ -27,23 +27,17 @@
                                 <th class="sorting_disabled" rowspan="1" colspan="1" aria-label="Actions" style="width: 120.6px;">Acciones</th>
                             </tr>
                         </thead>
-                        <tbody>  
-                            <tr data-item-id="7" role="row" class="odd">
-                                <td>1</td>
-                                <td>Nunca EFM</td>
-                                <td class="actions">
-                                    @include('private.Administrador.mantenedores.nunca-efm.edit')
-                                    @include('private.Administrador.mantenedores.nunca-efm.destroy')
-                                </td>
-                            </tr>
-                            <tr data-item-id="7" role="row" class="even">
-                                <td>2</td>
-                                <td>PAP Y EFM</td>
-                                <td class="actions">
-                                    @include('private.Administrador.mantenedores.nunca-efm.edit')
-                                    @include('private.Administrador.mantenedores.nunca-efm.destroy')
-                                </td>
-                            </tr>
+                        <tbody>
+                            @foreach ($nunca as $nun)
+                                <tr role="row" class="odd">
+                                    <td>{{ $nun->id }}</td>
+                                    <td>{{ $nun->nombre }}</td>
+                                    <td class="actions">
+                                        @include('private.Administrador.mantenedores.nunca-efm.edit')
+                                        @include('private.Administrador.mantenedores.nunca-efm.destroy')
+                                    </td>
+                                </tr>
+                            @endforeach
                         </tbody>
                     </table>
                 </div>
