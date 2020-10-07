@@ -1,13 +1,11 @@
-<a href="" type="button "class="on-default remove-row" data-toggle="modal" data-target="#edit">
-    <i class="fas fa-pencil-alt"></i>
-</a>
+<button class="btn btn-primary" data-toggle="modal" data-target="#create">Agregar EFM <i class="fas fa-plus"></i></button>
 
-<div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="edit" role="dialog" tabindex="-1">
+<div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="create" role="dialog" tabindex="-1">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLabel">
-                    Editar Paciente: Maria Elena Castro Castro
+                    Nuevo EFM
                 </h5>
                 <button aria-label="Close" class="close" data-dismiss="modal" type="button">
                 </button>
@@ -46,8 +44,8 @@
                             Resultado
                         </label>
                         <select class="form-control" multiple="multiple" data-plugin-multiselect="" data-plugin-options="{ &quot;maxHeight&quot;: 200 }" id="ms_example0" style="display: none;">
-                            <option value="1" selected>I</option>
-                            <option value="2" selected>G8</option>
+                            <option value="1">I</option>
+                            <option value="2">G8</option>
                             <option value="3">J1</option>
                         </select>
                     </div>
@@ -58,7 +56,7 @@
                     Cerrar
                 </button>
                 <button class="btn btn-primary">
-                    Actualizar
+                    Registrar
                 </button>
             </div>
         </div>

@@ -104,27 +104,15 @@
 	                    </li>
                     @endif
                     <li class="nav-parent nav-expanded mb-1">
-	       				<a class="nav-link" href="/{{Auth::user()->rol->name}}/PAP3">
+	       				<a class="nav-link" href="/{{Auth::user()->rol->name}}/PAP">
                             <i class="fas fa-vials"></i>
-                            <span>PAP 3 Años</span>
+                            <span>PAP</span>
                         </a>                        
                     </li>
                     <li class="nav-parent nav-expanded mb-1">
-	       				<a class="nav-link" href="/{{Auth::user()->rol->name}}/PAP1">
-                            <i class="fas fa-vials"></i>
-                            <span>PAP 1 Año</span>
-                        </a>                        
-                    </li>
-                    <li class="nav-parent nav-expanded mb-1">
-	       				<a class="nav-link" href="/{{Auth::user()->rol->name}}/EFM3">
+	       				<a class="nav-link" href="/{{Auth::user()->rol->name}}/EFM">
                             <i class="fas fa-vial"></i>
-                            <span>EFM 3 Años</span>
-                        </a>                        
-                    </li>
-                    <li class="nav-parent nav-expanded mb-1">
-	       				<a class="nav-link" href="/{{Auth::user()->rol->name}}/EFM1">
-                            <i class="fas fa-vial"></i>
-                            <span>EFM 1 Año</span>
+                            <span>EFM</span>
                         </a>                        
                     </li>
                     <li class="nav-parent nav-expanded mb-1">

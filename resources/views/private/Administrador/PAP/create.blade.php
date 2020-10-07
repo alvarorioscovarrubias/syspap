@@ -5,7 +5,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLabel">
-                    Nuevo PAP cada 1 año
+                    Nuevo PAP
                 </h5>
                 <button aria-label="Close" class="close" data-dismiss="modal" type="button">
                 </button>

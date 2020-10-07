@@ -8,13 +8,13 @@
                 <div class="card-actions">
                     <a href="#" class="card-action card-action-toggle" data-card-toggle=""></a>
                 </div>
-                <h2 class="card-title">EFM cada 3 años</h2>
+                <h2 class="card-title">EFM</h2>
             </header>
             <div class="card-body" style="display: block;">
                 <div class="row">
                     <div class="col-sm-6">
                         <div class="mb-3">
-                            @include('private.Administrador.EFM3.create')
+                            @include('private.Administrador.EFM.create')
                         </div>
                     </div>
                 </div>
@@ -38,29 +38,29 @@
                             <tr data-item-id="7" role="row" class="odd">
                                 <td>18.485.623-5</td>
                                 <td>Maria Elena Castro Castro</td>
-                                <td>21/01/2018</td>
+                                <td>21/01/2020</td>
                                 <td>I G8 J1</td>
                                 <td>21/01/2021</td>
-                                <td>3</td>
+                                <td>1</td>
                                 <td>Vigente</td>
                                 <td>01/02/2020</td>
                                 <td class="actions">
-                                    @include('private.Administrador.EFM3.edit')
-                                    @include('private.Administrador.EFM3.destroy')
+                                    @include('private.Administrador.EFM.edit')
+                                    @include('private.Administrador.EFM.destroy')
                                 </td>
                             </tr>
                             <tr data-item-id="8" role="row" class="even">
                                 <td>18.485.623-5</td>
                                 <td>Maria Elena Castro Castro</td>
-                                <td>21/01/2018</td>
+                                <td>21/01/2020</td>
                                 <td>I G8 J1</td>
                                 <td>21/01/2021</td>
-                                <td>3</td>
+                                <td>1</td>
                                 <td>Vigente</td>
                                 <td>01/02/2020</td>
                                 <td class="actions">
-                                    @include('private.Administrador.EFM3.edit')
-                                    @include('private.Administrador.EFM3.destroy')
+                                    @include('private.Administrador.EFM.edit')
+                                    @include('private.Administrador.EFM.destroy')
                                 </td>
                             </tr>
                         <?php } ?>
