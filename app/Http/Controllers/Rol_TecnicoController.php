@@ -19,19 +19,12 @@ class Rol_TecnicoController extends Controller
         return view('private.Tecnico.pacientes.index');
     }
 
-    public function pap3(){
-        return view('private.Tecnico.PAP3.index');
-    }
-    public function pap1(){
-        return view('private.Tecnico.PAP1.index');
-    }
-    
-    public function efm3(){
-        return view('private.Tecnico.EFM3.index');
+    public function pap(){
+        return view('private.Tecnico.PAP.index');
     }
 
-    public function efm1(){
-        return view('private.Tecnico.EFM1.index');
+    public function efm(){
+        return view('private.Tecnico.EFM.index');
     }
 
     public function mamografia(){

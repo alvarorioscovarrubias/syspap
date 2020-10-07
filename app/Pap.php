@@ -4,9 +4,9 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Pap1 extends Model
+class Pap extends Model
 {
-	protected $table="pap1";
+	protected $table="pap";
     protected $fillable=['id','fecha_examen','fecha_citacion','fecha_resultado','resultado_pap_id'];
 
     public function resultado()

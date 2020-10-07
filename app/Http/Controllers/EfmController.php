@@ -9,27 +9,27 @@ use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Storage;
 use Auth;
 use Session;
-use App\Pap3 as pap3;
+use App\Efm as efm;
 
 
-class Pap3Controller extends Controller{
+class EfmController extends Controller{
     
     public function store(Request $request){
-        $pap3 = new pap3($request->all());
-        $pap3->save();
+        $efm = new efm($request->all());
+        $efm->save();
         return redirect::back(); 
     }
 
     public function update(Request $request, $id){
-        $pap3 = pap3::find($id);
-        $pap3->fill($request->all());
-        $pap3->save();
+        $efm = efm::find($id);
+        $efm->fill($request->all());
+        $efm->save();
         return redirect::back(); 
     }
 
     public function destroy($id){
-        $pap3 = pap3::find($id);
-        $pap3->delete();
+        $efm = efm::find($id);
+        $efm->delete();
         return redirect::back();
     }
 }

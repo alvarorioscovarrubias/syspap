@@ -31,19 +31,12 @@ class Rol_SuperadminController extends Controller
         return view('private.Administrador.pacientes.index');
     }
 
-    public function pap3(){
-        return view('private.Administrador.PAP3.index');
-    }
-    public function pap1(){
-        return view('private.Administrador.PAP1.index');
-    }
-    
-    public function efm3(){
-        return view('private.Administrador.EFM3.index');
+    public function pap(){
+        return view('private.Administrador.PAP.index');
     }
 
-    public function efm1(){
-        return view('private.Administrador.EFM1.index');
+    public function efm(){
+        return view('private.Administrador.EFM.index');
     }
 
     public function mamografia(){

@@ -11,10 +11,8 @@ Route::get('/home','Rol_SuperadminController@index')->middleware('auth');
 //ADMINISTRADOR
 Route::group(['middleware' => 'role:Administrador'], function(){
 	Route::get('Administrador/pacientes','Rol_SuperadminController@pacientes');
-	Route::get('Administrador/PAP3','Rol_SuperadminController@pap3');
-	Route::get('Administrador/PAP1','Rol_SuperadminController@pap1');
-	Route::get('Administrador/EFM3','Rol_SuperadminController@efm3');
-	Route::get('Administrador/EFM1','Rol_SuperadminController@efm1');
+	Route::get('Administrador/PAP','Rol_SuperadminController@pap');
+	Route::get('Administrador/EFM','Rol_SuperadminController@efm');
 	Route::get('Administrador/mamografia','Rol_SuperadminController@mamografia');
 	Route::get('Administrador/ecotomografia','Rol_SuperadminController@eco');
 	Route::get('Administrador/tecnicos','Rol_SuperadminController@tecnico');
@@ -32,10 +30,8 @@ Route::group(['middleware' => 'role:Administrador'], function(){
 //TECNICO
 Route::group(['middleware' => 'role:Tecnico'], function(){
 	Route::get('Tecnico/pacientes','Rol_TecnicoController@pacientes');
-	Route::get('Tecnico/PAP3','Rol_TecnicoController@pap3');
-	Route::get('Tecnico/PAP1','Rol_TecnicoController@pap1');
-	Route::get('Tecnico/EFM3','Rol_TecnicoController@efm3');
-	Route::get('Tecnico/EFM1','Rol_TecnicoController@efm1');
+	Route::get('Tecnico/PAP','Rol_TecnicoController@pap');
+	Route::get('Tecnico/EFM','Rol_TecnicoController@efm');
 	Route::get('Tecnico/mamografia','Rol_TecnicoController@mamografia');
 	Route::get('Tecnico/ecotomografia','Rol_TecnicoController@eco');
 });
@@ -46,11 +42,8 @@ Route::group(['middleware' => 'role:Tecnico'], function(){
 	Route::resource('mantenedor-ecotomografia','EcotomografiaController');
 	Route::delete('mantenedor-ecotomografia/{id}', array('uses'=>'EcotomografiaController@destroy','as'=>'mantenedor-ecotomografia.delete'));
 
-	Route::resource('mantenedor-efm1','Efm1Controller');
-	Route::delete('mantenedor-efm1/{id}', array('uses'=>'Efm1Controller@destroy','as'=>'mantenedor-efm1.delete'));
-
-	Route::resource('mantenedor-efm3','Efm3Controller');
-	Route::delete('mantenedor-efm3/{id}', array('uses'=>'Efm3Controller@destroy','as'=>'mantenedor-efm3.delete'));
+	Route::resource('mantenedor-efm','EfmController');
+	Route::delete('mantenedor-efm/{id}', array('uses'=>'EfmController@destroy','as'=>'mantenedor-efm.delete'));
 
 	Route::resource('mantenedor-grupo-edad','GrupoEdadController');
 	Route::delete('mantenedor-grupo-edad/{id}', array('uses'=>'GrupoEdadController@destroy','as'=>'mantenedor-grupo-edad.delete'));
@@ -61,11 +54,8 @@ Route::group(['middleware' => 'role:Tecnico'], function(){
 	Route::resource('mantenedor-paciente','PacienteController');
 	Route::delete('mantenedor-paciente/{id}', array('uses'=>'PacienteController@destroy','as'=>'mantenedor-paciente.delete'));
 
-	Route::resource('mantenedor-pap1','Pap1Controller');
-	Route::delete('mantenedor-pap1/{id}', array('uses'=>'Pap1Controller@destroy','as'=>'mantenedor-pap1.delete'));
-
-	Route::resource('mantenedor-pap3','Pap3Controller');
-	Route::delete('mantenedor-pap3/{id}', array('uses'=>'Pap3Controller@destroy','as'=>'mantenedor-pap3.delete'));
+	Route::resource('mantenedor-pap','Pap1Controller');
+	Route::delete('mantenedor-pap/{id}', array('uses'=>'PapController@destroy','as'=>'mantenedor-pap.delete'));
 
 	Route::resource('mantenedor-resultado-eco','ResultadoEcotomografiaController');
 	Route::delete('mantenedor-resultado-eco/{id}', array('uses'=>'ResultadoEcotomografiaController@destroy','as'=>'mantenedor-resultado-eco.delete'));
