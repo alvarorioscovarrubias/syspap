@@ -7,6 +7,7 @@ Route::get('/', function () {
 });
 
 Route::get('/home','Rol_SuperadminController@index')->middleware('auth');
+Route::get('/mi-perfil','Rol_SuperadminController@mi_perfil')->middleware('auth');
 
 //ADMINISTRADOR
 Route::group(['middleware' => 'role:Administrador'], function(){

@@ -88,4 +88,8 @@ class Rol_SuperadminController extends Controller
         return view('private.Administrador.mantenedores.nunca-efm.index',compact('nunca'));
     }
 
+    public function mi_perfil(){
+        return view('private.mi-perfil');
+    }
+
 }

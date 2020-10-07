@@ -156,9 +156,9 @@
 			<div class="dropdown-menu">
 				<ul class="list-unstyled mb-2">
 					<li class="divider"></li>
-					{{--<li>
-						<a role="menuitem" tabindex="-1" href="{{asset('private/mi-perfil')}}"><i class="fas fa-user"></i> Mi perfil</a>
-					</li>--}}
+					<li>
+						<a role="menuitem" tabindex="-1" href="{{asset('/mi-perfil')}}"><i class="fas fa-user"></i> Mi perfil</a>
+					</li>
 					<li>
 
 						<a role="menuitem" tabindex="-1" href="{{ route('logout') }}"
